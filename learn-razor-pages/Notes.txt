@@ -1,0 +1,5 @@
+﻿<a class="nav-link" asp-page="Item" asp-route-id="@Item.Id">Auto</a>
+
+renders to
+
+<a class="nav-link" href="/Item/23">Auto</a> 
