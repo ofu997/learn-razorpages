@@ -10,5 +10,7 @@ namespace learn_razor_pages.Services
     public interface IMenuService
     {
         List<MenuItem> GetMenuItems();
+
+        List<MenuItem> GetPopularItems(); 
     }
 }

@@ -42,3 +42,5 @@ C:\Users\ofu23\Documents\Projects\learn-razor-pages\learn-razor-pages\obj\Debug\
 C:\Users\ofu23\Documents\Projects\learn-razor-pages\learn-razor-pages\obj\Debug\netcoreapp3.1\Razor\Pages\Item.cshtml.g.cs
 C:\Users\ofu23\Documents\Projects\learn-razor-pages\learn-razor-pages\bin\Debug\netcoreapp3.1\bundleconfig.json
 C:\Users\ofu23\Documents\Projects\learn-razor-pages\learn-razor-pages\obj\Debug\netcoreapp3.1\Razor\Pages\Confirmation.cshtml.g.cs
+C:\Users\ofu23\Documents\Projects\learn-razor-pages\learn-razor-pages\obj\Debug\netcoreapp3.1\Razor\Pages\MobileWidget.cshtml.g.cs
+C:\Users\ofu23\Documents\Projects\learn-razor-pages\learn-razor-pages\obj\Debug\netcoreapp3.1\Razor\Pages\Components\PopularBrews\Default.cshtml.g.cs

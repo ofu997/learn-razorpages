@@ -21,7 +21,13 @@
             @*<p class="lead">A seasonal delight we offer every autumn.  Pumpkin bread with just a bit of spice, cream cheese frosting with just a hint of home.</p>*@
             <p class="lead">@Model.Item.Summary</p>
             <blockquote class="blockquote">
-                <p class="mb-0">I feel at home every time I take a bite.</p>
+                @{ var quote = @Model.Item.Name == "Bean there, done that!" || @Model.Item.Name == "Ground to Go"
+                    ? "I feel at home every time I take a sip."
+                    : "I feel at home every time I take a bite.";
+                }
+
+                <p class="mb-0">@quote</p>
+
                 <footer class="blockquote-footer">
                     Actual customer
                     <cite title="Source Title">Happy Customer</cite>
@@ -45,6 +51,8 @@
                     </ul>
                 </div>
             </div>
+
+            @await Component.InvokeAsync("PopularBrews", new { count = 3 })
         </div>
     </div>
 </div>

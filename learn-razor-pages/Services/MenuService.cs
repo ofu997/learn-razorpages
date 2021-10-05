@@ -33,6 +33,7 @@ namespace learn_razor_pages.Services
                 new MenuItem()
                 {
                     Id = 3,
+                    Slug = "granola-with-nuts", 
                     Name = "Granola with Nuts",
                     Summary = "It's not flashy, but it sure is healthy.  Perfect for when you need the calories, but not the guilt.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
@@ -41,6 +42,7 @@ namespace learn_razor_pages.Services
                 new MenuItem()
                 {
                     Id = 4,
+                    Slug = "coffee-beans", 
                     Name = "Bean there, done that!",
                     Summary = "Do you prefer to grind your own coffee? No problem, we'll give you the beans.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
@@ -49,6 +51,7 @@ namespace learn_razor_pages.Services
                 new MenuItem()
                 {
                     Id = 5,
+                    Slug = "bagels", 
                     Name = "Fresh Bagels",
                     Summary = "They're just as round as donuts, but far more healthy! Freshly made every morning before sunrise.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
@@ -58,9 +61,37 @@ namespace learn_razor_pages.Services
                 {
                     Id = 6,
                     Name = "Fresh Fruit",
+                    Slug = "fruit", 
                     Summary = "We've got strawberries, blueberries, apples, bananas - we could list them all, but we'd prefer you come take a look!",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "strawberries.png"
+                }
+            };
+        }
+
+        public List<MenuItem> GetPopularItems()
+        {
+            return new List<MenuItem>()
+            {
+                new MenuItem()
+                {
+                    Name = "Mocha Latte",
+                    Summary = "Half coffee, half treat - the perfect combo."
+                },
+                new MenuItem()
+                {
+                    Name = "Raspberry Coffee",
+                    Summary = "A fresh blend with a refreshing taste"
+                },
+                new MenuItem()
+                {
+                    Name = "Peppermint Hot Chocolate",
+                    Summary = "So good, you'll be glad it's cold outside."
+                },
+                new MenuItem()
+                {
+                    Name = "Green Tea",
+                    Summary = "It's classic for a reason"
                 }
             };
         }
