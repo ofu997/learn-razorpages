@@ -21,18 +21,22 @@ namespace learn_razor_pages.Pages
 
         }
 
-        public void OnPost()
+        public IActionResult OnPost()
         {
             if (ModelState.IsValid)
             {
                 EmailService.SendEmail(Contact);
-                Message = "Your email has been sent";
+                //Message = "Your email has been sent";
+                return new RedirectToPageResult("Confirmation", "Contact");
             }
+            return Page(); 
         }
 
-        public void OnPostSubscribe(string address)
+        public IActionResult OnPostSubscribe(string address)
         {
             EmailService.SendEmail(address);
+            //Message = "You have been addd to the mailing list."; 
+            return new RedirectToPageResult("Confirmation", "Subscribe"); 
         }
     }
 }
