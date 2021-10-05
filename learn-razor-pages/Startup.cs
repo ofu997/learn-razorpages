@@ -1,13 +1,13 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace learn_razor_pages
 {
@@ -27,6 +27,11 @@ namespace learn_razor_pages
             {
                 options.Conventions.AddPageRoute("/index", "home");
                 options.Conventions.AddPageRoute("/index", "wired");
+            });
+
+            services.Configure<RouteOptions>(opts =>
+            {
+                opts.ConstraintMap.Add("promo", typeof(PromoConstraint));
             });
         }
 
