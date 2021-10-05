@@ -11,6 +11,7 @@ namespace learn_razor_pages.Pages
 {
     public class ContactModel : PageModel
     {
+        // maps incoming data 
         [BindProperty]
         public Contact Contact { get; set; }
         public string Message { get; private set; }
